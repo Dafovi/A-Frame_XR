@@ -7,8 +7,6 @@
             height: 100%; width: 100%;
         }      
         #webcam {
-            z-index: 20;
-            opacity:0.4;
             position: absolute;
             background-size: 100% 100%;
             top: 0; left: 0; 
@@ -58,7 +56,8 @@
 </head>
 <body>
     <video id="webcam" autoplay playsinline></video>
-    <a-scene>
+    <a-scene >
+        
         <a-sphere cursor-listener position="-7 0 7" radius="1.25" color="yellowgreen"></a-sphere>
         <a-sphere cursor-listener position="-7 0 -7" radius="1.25" color="green"></a-sphere>
         <a-sphere cursor-listener position="7 0 7" radius="1.25" color="aqua"></a-sphere>
